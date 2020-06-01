@@ -1,0 +1,19 @@
+<div class="header" (click)="onClickHeader()">
+	<ng-diy-ui-text type="subtitle" class="header-title">
+		{{ title }}
+	</ng-diy-ui-text>
+	<ng-diy-ui-icon
+		class="header-arrow"
+		size="custom"
+		iconLabel="simple-arrow"
+		[ngStyle]="{ transform: 'rotate(' + (opened ? 180 : 0) + 'deg)' }"
+	>
+	</ng-diy-ui-icon>
+</div>
+<div
+	[@content]="opened ? 'opened' : 'closed'"
+	class="content"
+	[ngStyle]="{ overflow: scroll ? 'auto' : 'hidden' }"
+>
+	<ng-content></ng-content>
+</div>

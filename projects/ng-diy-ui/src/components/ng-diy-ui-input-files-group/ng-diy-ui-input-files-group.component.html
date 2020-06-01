@@ -1,0 +1,15 @@
+<ng-diy-ui-input-file
+	*ngFor="let file of files; let index = index"
+	class="input-files-container-item"
+	(unload)="unloadFile(index)"
+	multiple="true"
+	[viewFile]="file"
+>
+	{{ file.name }}
+</ng-diy-ui-input-file>
+<ng-diy-ui-input-file
+	class="input-files-container-item"
+	(upload)="uploadFile($event)"
+	multiple="true"
+>
+</ng-diy-ui-input-file>

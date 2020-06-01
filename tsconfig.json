@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-diy-ui": [
+        "dist/ng-diy-ui/ng-diy-ui",
+        "dist/ng-diy-ui"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
