@@ -1,5 +1,5 @@
 {
-	"name": "ng-diy-ui",
+	"name": "@ng-diy-ui/generator",
 	"version": "0.0.15",
 	"description": "Ng diy ui",
 	"scripts": {

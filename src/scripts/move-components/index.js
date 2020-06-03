@@ -10,7 +10,7 @@ module.exports = async (json, userChanges) => {
 		"components"
 	);
 
-	const componentsPath = path.join(__dirname, "../../components");
+	const componentsPath = path.join(__dirname, "../../../../@ng-diy-ui/components/src/components");
 
 	const componentsFolders = foldersByPath(componentsPath);
 	componentsFolders.forEach(async (componentFolder) => {

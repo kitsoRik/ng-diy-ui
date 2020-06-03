@@ -18,7 +18,8 @@ function getUserComponentsChanges(inputPath) {
 			dirPath = path.join(inputPath, name);
 		return {
 			name,
-			path: dirPath
+			path: dirPath,
+			// filesNames: anyByPath(dirPath).map((f) => f.name),
 		};
 	});
 }

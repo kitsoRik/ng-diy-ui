@@ -11,7 +11,7 @@ module.exports = async (json, userChanges) => {
 		"styles"
 	);
 
-	const stylesPath = path.join(__dirname, "../../styles");
+	const stylesPath = path.join(__dirname, "../../../../@ng-diy-ui/components/src/styles");
 
 	await moveColors(
 		path.join(stylesPath, "colors.scss"),
