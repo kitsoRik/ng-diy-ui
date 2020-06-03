@@ -5,8 +5,7 @@ exports.generatedDirectory = (json) => {
 		throw new Error(
 			"Generated path must be, please add field 'generatedPath' with path to your"
 		);
-	return path.join(__dirname, "../../../../../", json.generatedPath);
+	return path.join(__dirname, "../../../../../../", json.generatedPath);
 };
 
-exports.projectDirectory = path.join(__dirname, "../../../../../");
-
+exports.projectDirectory = path.join(__dirname, "../../../../../../");

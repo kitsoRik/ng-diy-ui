@@ -1,9 +1,9 @@
 const path = require("path");
-const directories = require("ng-diy-ui/src/scripts/utils/directories");
+const directories = require("../utils/directories");
 const { readdirSync } = require("fs");
-const fs = require("ng-diy-ui/src/scripts/utils/fs");
-const moveColors = require("ng-diy-ui/src/scripts/move-styles/move-colors");
-const moveEffects = require("ng-diy-ui/src/scripts/move-styles/move-effects");
+const fs = require("../utils/fs");
+const moveColors = require("./move-colors");
+const moveEffects = require("./move-effects");
 
 module.exports = async (json, userChanges) => {
 	const stylesPathInUser = path.join(
@@ -11,7 +11,10 @@ module.exports = async (json, userChanges) => {
 		"styles"
 	);
 
-	const stylesPath = path.join(__dirname, "../../../../@ng-diy-ui/components/src/styles");
+	const stylesPath = path.join(
+		__dirname,
+		"../../../../../@ng-diy-ui/components/src/styles"
+	);
 
 	await moveColors(
 		path.join(stylesPath, "colors.scss"),

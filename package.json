@@ -1,6 +1,6 @@
 {
 	"name": "@ng-diy-ui/generator",
-	"version": "0.0.15",
+	"version": "0.0.1",
 	"description": "Ng diy ui",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",

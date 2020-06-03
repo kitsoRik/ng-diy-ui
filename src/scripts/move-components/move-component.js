@@ -8,7 +8,7 @@ const {
 	unlinkSync,
 	readFileSync,
 } = require("fs");
-const toCamesCase = require("ng-diy-ui/src/scripts/utils/toCamesCase");
+const toCamesCase = require("../utils/toCamesCase");
 
 module.exports = (
 	componentFolder,

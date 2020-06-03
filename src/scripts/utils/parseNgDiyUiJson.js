@@ -2,7 +2,7 @@ const { join } = require("path");
 const { existsSync, readFileSync } = require("fs");
 
 module.exports = () => {
-	const projectPath = join(__dirname, "../../../../../");
+	const projectPath = join(__dirname, "../../../../../..");
 	const fileName = "ng-diy-ui.json";
 
 	const kitUiJsonPath = join(projectPath, fileName);

@@ -1,10 +1,10 @@
 const parseKitUiJson = require("./utils/parseNgDiyUiJson");
 const directories = require("./utils/directories");
 const path = require("path");
-const getUserChanges = require("ng-diy-ui/src/scripts/get-user-changes");
+const getUserChanges = require("./get-user-changes");
 const moveComponents = require("./move-components/index.js");
 const init = require("./utils/init");
-const moveStyles = require("ng-diy-ui/src/scripts/move-styles");
+const moveStyles = require("./move-styles");
 
 (async () => {
 	const json = parseKitUiJson();

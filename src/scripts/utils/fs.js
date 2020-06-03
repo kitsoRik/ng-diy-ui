@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { ncp } = require("ncp");
 
 exports.copyFolder = (fromPath, toPath) => {
 	const dirs = fs.readdirSync(fromPath, { withFileTypes: true });

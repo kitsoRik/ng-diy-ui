@@ -1,8 +1,8 @@
 const path = require("path");
-const directories = require("ng-diy-ui/src/scripts/utils/directories");
+const directories = require("../utils/directories");
 const { readdirSync } = require("fs");
-const fs = require("ng-diy-ui/src/scripts/utils/fs");
-const moveComponent = require("ng-diy-ui/src/scripts/move-components/move-component");
+const fs = require("../utils/fs");
+const moveComponent = require("./move-component");
 
 module.exports = async (json, userChanges) => {
 	const componentsPathInUser = path.join(
@@ -10,7 +10,10 @@ module.exports = async (json, userChanges) => {
 		"components"
 	);
 
-	const componentsPath = path.join(__dirname, "../../../../@ng-diy-ui/components/src/components");
+	const componentsPath = path.join(
+		__dirname,
+		"../../../../../@ng-diy-ui/components/src/components"
+	);
 
 	const componentsFolders = foldersByPath(componentsPath);
 	componentsFolders.forEach(async (componentFolder) => {
